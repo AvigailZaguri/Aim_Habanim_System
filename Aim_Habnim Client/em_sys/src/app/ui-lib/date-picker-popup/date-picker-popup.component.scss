@@ -1,0 +1,25 @@
+
+/*
+.btn-outline-secondary
+{
+    border-radius: 0px;
+    border-radius: 0px, 0px ,0px ,0px ;
+}
+*/
+.input-group > .input-group-append > .btn
+{
+    
+    border-radius: 4px 0px 0px 4px ;
+}
+
+.input-group > .form-control:not(:last-child)
+{
+    border-radius: 0px 4px 4px 0px ;
+}
+
+
+ngb-datepicker
+{
+    left: -10px;
+}
+

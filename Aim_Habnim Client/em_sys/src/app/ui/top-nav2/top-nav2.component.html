@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">אם הבנים - מערכת</a>
+    <button (click)="toggleCollapse()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault" [@collapse]="collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/']" >ראשי <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="dropdown01"  ngbDropdownToggle>משפחות</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
+                <a class="dropdown-item" [routerLink]="['/family']" >משפחות</a>
+                <a class="dropdown-item" [routerLink]="['/family/add']" >הוספה</a>
+            </div>
+          </li>
+
+        <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="dropdown01"  ngbDropdownToggle>ראיונות</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
+                <a class="dropdown-item" [routerLink]="['/interview']" >ראיונות</a>
+                <a class="dropdown-item" [routerLink]="['/interview/add']" >הוספה</a>
+            </div>
+          </li>
+
+        <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="dropdown01"  ngbDropdownToggle>צוות</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
+                <a class="dropdown-item" [routerLink]="['/staff']" >צוות</a>
+                <a class="dropdown-item" [routerLink]="['/staff/add']" >הוספה</a>
+                
+            </div>
+          </li>
+      </ul>
+       <!--
+        <li class="nav-item dropdown" ngbDropdown>
+          <span  >
+            <a class="nav-link" id="dropdown01" [routerLink]="['/staff']" >צוות</a><span class=' dropdown-toggle' ngbDropdownToggle></span></span>
+            <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
+              <a class="dropdown-item" [routerLink]="['/staff/add']" >הוספה</a>
+            </div>
+          </li>
+          -->
+    </div>
+  </nav>
+  <div class='nav-placeholder'></div>
