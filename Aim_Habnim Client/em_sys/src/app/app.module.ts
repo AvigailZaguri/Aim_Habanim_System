@@ -27,6 +27,8 @@ import { ViewFamilyComponent } from './pages/family/view-family/view-family.comp
 
 import { InterviewComponent } from './pages/interview/interview.component';
 import { AddComponent } from './pages/interview/add/add.component';
+import { EventComponent } from './pages/event/event.component';
+import { CircleComponent } from './ui/circle/circle.component';
 
 
 //import { BrowserModule } from '@angular/platform-browser';
@@ -50,6 +52,8 @@ import { AddComponent } from './pages/interview/add/add.component';
     InterviewComponent,
     AddComponent,
     ViewFamilyComponent,
+    EventComponent,
+    CircleComponent
     
   ],
   imports: [

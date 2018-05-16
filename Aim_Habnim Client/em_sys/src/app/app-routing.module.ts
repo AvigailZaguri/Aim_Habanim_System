@@ -7,6 +7,10 @@ import { ViewFamilyComponent  } from './pages/family/view-family/view-family.com
 import { AddFamilyComponent } from './pages/family/add-family/add-family.component';
 import { InterviewComponent } from './pages/interview/interview.component';
 import { AddComponent } from './pages/interview/add/add.component';
+import{EventComponent} from './pages/event/event.component';
+import{CircleComponent} from './ui/circle/circle.component';
+
+
 const routes: Routes = [
   //{ path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   //{ path: 'dashboard', component: DashboardComponent },
@@ -23,9 +27,11 @@ const routes: Routes = [
   { path: 'interview', component: InterviewComponent ,
     children:[
       {path: 'add', component: AddComponent}
-    ] }
-  
+    ] },
+    { path: 'event', component: EventComponent  },
+    { path: 'circle', component: CircleComponent  }
 ];
+ 
  
 
 @NgModule({
