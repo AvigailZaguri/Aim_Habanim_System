@@ -7,3 +7,6 @@
     text-align: center;
     background: #000
   }
+  .circle:hover {
+    background: #808080;
+}
